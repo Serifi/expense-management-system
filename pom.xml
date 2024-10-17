@@ -9,12 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <sonar.host.url>https://sonar2.se.jku.at</sonar.host.url>
-        <sonar.login>85854e2b37cc99305376b4b5ccc25517bbebb5f6</sonar.login>
-        <sonar.projectKey>C-ss24-money-app</sonar.projectKey>
-        <sonar.projectName>C - Money-App SS24</sonar.projectName>
-		<sonar.java.binaries>./target/classes</sonar.java.binaries>
-        <sonar.projectVersion>0.1</sonar.projectVersion>
+        <!-- sonar data for authentication removed for security reasons -->
     </properties>
     <dependencies>
         <dependency>
