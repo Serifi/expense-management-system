@@ -1,4 +1,4 @@
-# Ausgabenverwaltung
+# Expense Management System
 
 Ausgabenverwaltung ist eine Softwarelösung, welche Ihnen hilft, Ihre persönlichen Finanzen zu verwalten. 
 
