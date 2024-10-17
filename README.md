@@ -1,5 +1,4 @@
 # Ausgabenverwaltung
-### von Argjent Serifi, David Deisinger, Sebastian Huber
 
 Ausgabenverwaltung ist eine Softwarelösung, welche Ihnen hilft, Ihre persönlichen Finanzen zu verwalten. 
 
