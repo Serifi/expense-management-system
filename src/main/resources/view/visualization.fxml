@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.VisualizationController">
+   <center>
+      <VBox spacing="10" BorderPane.alignment="CENTER">
+         <children>
+            <!-- HBox für die Auswahl des Zeitraums und den Typ des Diagramms -->
+            <HBox alignment="CENTER_LEFT" spacing="10">
+               <children>
+                  <ComboBox fx:id="periodCB" prefWidth="150.0" promptText="Zeitraum">
+                     <HBox.margin>
+                        <Insets left="16.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="chartCB" prefWidth="150.0" promptText="Diagramm">
+                     <HBox.margin>
+                        <Insets left="16.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <FontIcon iconLiteral="bi-caret-left" iconSize="24" onMouseClicked="#goToPrevPeriod">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets left="26.0" />
+                     </HBox.margin></FontIcon>
+                  <Label fx:id="currPeriodL" prefWidth="175.0" style="-fx-alignment: center;" text="Zeitraum">
+                     <font>
+                        <Font name="Arial Nova Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <FontIcon iconLiteral="bi-caret-right" iconSize="24" onMouseClicked="#goToNextPeriod">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontIcon>
+                  <DatePicker fx:id="periodDP" stylesheets="@css/date-picker.css">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <Pane>
+               <VBox.margin>
+                  <Insets left="16.0" top="16.0" />
+               </VBox.margin>
+               <children>
+                  <PieChart fx:id="pieChart" prefHeight="480.0" prefWidth="600.0" />
+                  <BarChart fx:id="barChart" prefHeight="480.0" prefWidth="600.0" visible="false">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="95.0" prefWidth="785.0">
+               <children>
+                  <Label prefHeight="28.0" text="Visualisierung">
+                     <VBox.margin>
+                        <Insets left="16.0" top="16.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" text="Nutzen Sie grafische Darstellungen Ihrer Ausgaben, um zu verstehen, wie sich Ihre finanziellen Ressourcen verteilen. &#10;Einblicke in monatliche und wöchentliche Ausgaben helfen Ihnen, finanzielle Entscheidungen besser zu treffen." textFill="#00000080">
+                     <font>
+                        <Font name="Arial Nova" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="16.0" top="4.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="totalExpensesLabel" prefHeight="30.0" prefWidth="225.0" style="-fx-alignment: center-right;" text="0">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="16.0" top="16.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

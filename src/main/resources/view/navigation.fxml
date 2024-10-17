@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane fx:id="mainBP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NavigationController">
+   <left>
+      <VBox prefWidth="255.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="100.0" prefWidth="258.0" style="-fx-alignment: center;" text="Ausgabenverwaltung" textAlignment="CENTER" textFill="#1769aa">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="255.0" style="-fx-alignment: center;">
+               <children>
+                  <Button fx:id="expensesB" mnemonicParsing="false" onAction="#goToExpenses" prefHeight="56.0" prefWidth="255.0" stylesheets="@css/navigation-button.css" text="Ausgaben">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-cash" iconSize="24" />
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="200.0" style="-fx-alignment: center;">
+               <children>
+                  <Button fx:id="categoriesB" mnemonicParsing="false" onAction="#goToCategories" prefHeight="56.0" prefWidth="255.0" stylesheets="@css/navigation-button.css" text="Kategorien">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-tag" iconSize="24" />
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="56.0" prefWidth="200.0" style="-fx-alignment: center;">
+               <children>
+                  <Button fx:id="visualizationB" mnemonicParsing="false" onAction="#goToVisualization" prefHeight="56.0" prefWidth="255.0" stylesheets="@css/navigation-button.css" text="Visualisierung">
+                     <graphic>
+                        <FontIcon iconLiteral="bi-bar-chart" iconSize="24" />
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" top="16.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+
+   </center>
+</BorderPane>

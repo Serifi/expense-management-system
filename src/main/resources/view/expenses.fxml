@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ExpensesController">
+   <center>
+      <VBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+         <TableView fx:id="expenseTV" editable="true" prefHeight="500.0" stylesheets="@css/tableview.css" VBox.vgrow="ALWAYS">
+            <columns>
+               <TableColumn fx:id="imageC" prefWidth="128.0" />
+               <TableColumn fx:id="dateC" prefWidth="100.0" text="Datum" />
+               <TableColumn fx:id="locationC" prefWidth="156.0" text="Ort" />
+               <TableColumn fx:id="descriptionC" prefWidth="301.0" text="Beschreibung" />
+               <TableColumn fx:id="amountC" minWidth="0.0" prefWidth="98.0" text="Betrag" />
+               <TableColumn fx:id="categoryC" prefWidth="143.0" text="Kategorie" />
+               <TableColumn fx:id="actionC" prefWidth="32.0" />
+            </columns>
+            <VBox.margin>
+               <Insets />
+            </VBox.margin>
+         </TableView>
+         <BorderPane.margin>
+            <Insets left="16.0" right="16.0" top="16.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <VBox prefHeight="135.0" BorderPane.alignment="CENTER">
+         <HBox prefHeight="95.0" spacing="10">
+            <VBox prefHeight="95.0" prefWidth="785.0">
+               <Label prefHeight="28.0" text="Ausgaben">
+                  <VBox.margin>
+                     <Insets left="16.0" top="16.0" />
+                  </VBox.margin>
+                  <font>
+                     <Font name="Arial Rounded MT Bold" size="24.0" />
+                  </font>
+               </Label>
+               <Label prefHeight="39.0" text="Erfassen Sie jede Ausgabe mühelos und behalten Sie den Überblick über alle getätigten Ausgaben sowie die Gesamtkosten. &#10;Filtern Sie intuitiv nach Suchbegriffen, Kategorien oder Zeiträumen und überwachen Sie das Einhalten von Monatslimits." textFill="#00000080">
+                  <font>
+                     <Font name="Arial Nova" size="14.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets left="16.0" top="4.0" />
+                  </VBox.margin>
+               </Label>
+            </VBox>
+            <Button mnemonicParsing="false" onAction="#goToExpenseCreation" stylesheets="@css/primary-button.css" text="Ausgabe hinzufügen">
+               <HBox.margin>
+                  <Insets right="16.0" top="24.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets top="24.0" />
+               </opaqueInsets>
+               <graphic>
+                  <FontIcon iconColor="white" iconLiteral="bi-plus" iconSize="24" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </HBox>
+         <HBox style="-fx-alignment: center_left;">
+            <VBox.margin>
+               <Insets left="16.0" right="16.0" />
+            </VBox.margin>
+            <TextField fx:id="searchTF" prefHeight="25.0" prefWidth="300.0" promptText="Suche" styleClass="text-field">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+            <CheckComboBox fx:id="categoriesCB" prefWidth="150.0" title="Kategorie">
+               <HBox.margin>
+                  <Insets left="16.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </CheckComboBox>
+            <ComboBox fx:id="periodCB" prefWidth="150.0" promptText="Zeitraum" >
+               <HBox.margin>
+                  <Insets left="16.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <FontIcon iconLiteral="bi-caret-left" iconSize="24" onMouseClicked="#goToPrevPeriod">
+               <HBox.margin>
+                  <Insets left="16.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+            <Label fx:id="currPeriodL" prefWidth="175.0" style="-fx-alignment: center;" text="Zeitraum">
+               <font>
+                  <Font name="Arial Nova Bold" size="14.0" />
+               </font>
+            </Label>
+            <FontIcon iconLiteral="bi-caret-right" iconSize="24" onMouseClicked="#goToNextPeriod">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+            <DatePicker fx:id="periodDP" prefWidth="0.0" styleClass="date-picker" stylesheets="@css/date-picker.css" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </DatePicker>
+            <FontIcon iconColor="RED" iconLiteral="bi-x" iconSize="24" onMouseClicked="#resetFilter">
+               <HBox.margin>
+                  <Insets left="48.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontIcon>
+         </HBox>
+      </VBox>
+   </top>
+   <bottom>
+      <Pane prefHeight="65.0" BorderPane.alignment="CENTER">
+         <FontIcon iconLiteral="bi-caret-left-fill" iconSize="24" layoutX="402.0" layoutY="43.0" onMouseClicked="#goToFirstPage">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </FontIcon>
+         <FontIcon iconLiteral="bi-caret-left" iconSize="24" layoutX="426.0" layoutY="43.0" onMouseClicked="#goToPrevPage">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </FontIcon>
+         <Label fx:id="pageL" layoutX="444.0" layoutY="25.0" prefWidth="150.0" style="-fx-alignment: center;">
+            <font>
+               <Font name="Arial Nova Bold" size="14.0" />
+            </font>
+         </Label>
+         <FontIcon iconLiteral="bi-caret-right" iconSize="24" layoutX="600.0" layoutY="43.0" onMouseClicked="#goToNextPage">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </FontIcon>
+         <FontIcon iconSize="24" />
+         <FontIcon iconLiteral="bi-caret-right-fill" iconSize="24" layoutX="624.0" layoutY="43.0" onMouseClicked="#goToLastPage">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </FontIcon>
+         <Label fx:id="totalAmountL" layoutX="665.0" layoutY="21.0" prefHeight="24.0" prefWidth="147.0" style="-fx-alignment: center;" text="0">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label fx:id="limitL" layoutX="862.0" layoutY="16.0" style="-fx-alignment: center_left;" text="Monatslimit:" />
+         <Label fx:id="overspentL" layoutX="862.0" layoutY="34.0" style="-fx-alignment: center_left;" text="Überzogen:" textFill="RED">
+            <font>
+               <Font name="Arial" size="13.0" />
+            </font></Label>
+         <ProgressIndicator fx:id="spentLimitBar" layoutX="825.0" layoutY="19.0" progress="0.0" />
+         <Label fx:id="limitAmountL" layoutX="940.0" layoutY="16.0" prefHeight="18.0" prefWidth="64.0" style="-fx-alignment: center_right;" text="0" />
+         <Label fx:id="overspentAmountL" layoutX="940.0" layoutY="35.0" prefHeight="18.0" prefWidth="64.0" style="-fx-alignment: center_right;" text="0" textFill="RED" />
+      </Pane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,14 @@
+.button {
+    -fx-font-family: "Arial Rounded MT Bold";
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: '#FF4747';
+    -fx-background-radius: 16px;
+    -fx-border-width: 0;
+    -fx-effect: null;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0.5, 0, 0);
+}

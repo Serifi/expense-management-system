@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CategoriesController">
+   <children>
+      <VBox prefHeight="135.0">
+         <children>
+            <HBox prefHeight="95.0" spacing="10">
+               <children>
+                  <VBox prefHeight="95.0" prefWidth="784.0">
+                     <children>
+                        <Label prefHeight="28.0" text="Kategorien">
+                           <VBox.margin>
+                              <Insets left="16.0" top="16.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="39.0" text="Legen Sie Kategorien mit individuellen Namen und Farben an, um Ihre Ausgaben effektiv zu organisieren. &#10;Bearbeiten oder löschen Sie Kategorien und setzen Sie Monatslimits, um Ihre Budgetziele zu erreichen." textFill="#00000080">
+                           <font>
+                              <Font name="Arial Nova" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="16.0" top="4.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#goToCategoryCreation" stylesheets="@css/primary-button.css" text="Kategorie hinzufügen">
+                     <HBox.margin>
+                        <Insets right="16.0" top="24.0" />
+                     </HBox.margin>
+                     <opaqueInsets>
+                        <Insets top="24.0" />
+                     </opaqueInsets>
+                     <graphic>
+                        <FontIcon iconColor="white" iconLiteral="bi-plus" iconSize="24" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox style="-fx-alignment: center_left;">
+               <VBox.margin>
+                  <Insets left="16.0" right="16.0" />
+               </VBox.margin>
+               <children>
+                  <ComboBox fx:id="periodCB" prefWidth="150.0" promptText="Zeitraum">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <FontIcon iconLiteral="bi-caret-left" iconSize="24" onMouseClicked="#goToPrevPeriod">
+                     <HBox.margin>
+                        <Insets left="24.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontIcon>
+                  <Label fx:id="currPeriodL" prefWidth="175.0" style="-fx-alignment: center;" text="Zeitraum">
+                     <font>
+                        <Font name="Arial Nova Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <FontIcon iconLiteral="bi-caret-right" iconSize="24" onMouseClicked="#goToNextPeriod">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontIcon>
+                  <DatePicker fx:id="periodDP" prefWidth="0.0" styleClass="date-picker" stylesheets="@css/date-picker.css" visible="false">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ScrollPane fx:id="categoriesSP" layoutX="24.0" layoutY="155.0" prefHeight="546.0" prefWidth="980.0" />
+   </children>
+</AnchorPane>

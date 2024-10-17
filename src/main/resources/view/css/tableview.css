@@ -1,0 +1,52 @@
+.table-view .scroll-bar .track {
+    -fx-background-color: lightgrey;
+}
+
+.table-view .scroll-bar .thumb {
+    -fx-background-color: grey;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: white;
+    -fx-border-width: 0;
+}
+
+.table-row-cell {
+    -fx-border-width: 0;
+    -fx-padding: 8px;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: white;
+}
+
+.table-view .column-header .label {
+    -fx-padding: 16px;
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0;
+}
+
+.table-view .table-cell {
+    -fx-border-width: 0;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-color: lightgrey;
+    -fx-padding: 8px;
+}

@@ -1,0 +1,19 @@
+.date-picker .text-field {
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-opacity: 0;
+}
+
+.date-picker .arrow-button {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}
+
+.date-picker {
+    -fx-border-width: 0;
+    -fx-background-color: transparent;
+}

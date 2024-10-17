@@ -1,0 +1,401 @@
+[ {
+  "id" : "597837a2-5c1b-4d8e-b6fa-ec0d58e08d5a",
+  "date" : [ 2024, 7, 1 ],
+  "time" : [ 10, 30 ],
+  "location" : "Rewe",
+  "amount" : 250.0,
+  "description" : "Wöchentlicher Großeinkauf",
+  "imagePath" : "data/images/lebensmittel.png",
+  "category" : {
+    "id" : "1e788f50-6c4c-4385-b601-f0eb62a0a4c6",
+    "name" : "Lebensmittel",
+    "color" : {
+      "red" : 1.0,
+      "green" : 0.878000020980835,
+      "blue" : 0.800000011920929,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.5,
+      "green" : 0.20000000298023224,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 300.0
+  }
+}, {
+  "id" : "a3a453f3-b8c2-4641-a8e5-2ad652cc04f4",
+  "date" : [ 2023, 5, 15 ],
+  "time" : null,
+  "location" : "Ikea",
+  "amount" : 450.0,
+  "description" : "Möbeleinkauf",
+  "imagePath" : "data/images/couch.jpg",
+  "category" : {
+    "id" : "5cf85902-e755-41b8-9be8-df3ad533c554",
+    "name" : "Wohnung",
+    "color" : {
+      "red" : 0.7009999752044678,
+      "green" : 0.8669999837875366,
+      "blue" : 1.0,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.10000000149011612,
+      "green" : 0.20000000298023224,
+      "blue" : 0.30000001192092896,
+      "opacity" : 1.0
+    },
+    "limit" : 800.0
+  }
+}, {
+  "id" : "eaaf2d2a-6e0b-4651-9a77-b78c4e6c626b",
+  "date" : [ 2024, 6, 22 ],
+  "time" : null,
+  "location" : "Zoo Berlin",
+  "amount" : 80.0,
+  "description" : "Familienausflug",
+  "imagePath" : "data/images/zoo.jpg",
+  "category" : {
+    "id" : "2b1ec5d7-a3f7-4b8b-94b1-d6f9d1cf6124",
+    "name" : "Unterhaltung",
+    "color" : {
+      "red" : 0.800000011920929,
+      "green" : 0.699999988079071,
+      "blue" : 0.8999999761581421,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.266400009393692,
+      "green" : 0.23309999704360962,
+      "blue" : 0.299699991941452,
+      "opacity" : 1.0
+    },
+    "limit" : 160.0
+  }
+}, {
+  "id" : "7422e5b2-5db8-4096-ad34-0133af5cb6b4",
+  "date" : [ 2025, 2, 8 ],
+  "time" : [ 15, 45 ],
+  "location" : "Buchhandlung Thalia",
+  "amount" : 120.0,
+  "description" : "Bücherkauf für das neue Semester",
+  "imagePath" : "data/images/buecher.jpg",
+  "category" : {
+    "id" : "94b8bfa7-8ff7-4236-93b2-b5d2945b8c99",
+    "name" : "Bildung",
+    "color" : {
+      "red" : 0.9330000281333923,
+      "green" : 0.8109999895095825,
+      "blue" : 0.8109999895095825,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.10000000149011612,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 200.0
+  }
+}, {
+  "id" : "8d64818b-16f0-4a6b-bfc0-b314537c8d13",
+  "date" : [ 2024, 12, 17 ],
+  "time" : null,
+  "location" : "DB Bahn",
+  "amount" : 95.0,
+  "description" : "Bahnticket nach München",
+  "imagePath" : "data/images/bahnticket.jpg",
+  "category" : {
+    "id" : "cb0b8a9a-204a-474c-a7d6-e3adccf954ec",
+    "name" : "Transport",
+    "color" : {
+      "red" : 0.7450000047683716,
+      "green" : 0.871999979019165,
+      "blue" : 0.7450000047683716,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.4000000059604645,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 120.0
+  }
+}, {
+  "id" : "1c8f9159-99b4-46e5-9b5f-3f23c4f6291a",
+  "date" : [ 2023, 11, 30 ],
+  "time" : null,
+  "location" : "Apotheke am Hauptbahnhof",
+  "amount" : 12.0,
+  "description" : "Medikamente",
+  "imagePath" : "data/images/medikamente.jpeg",
+  "category" : {
+    "id" : "ade3d657-f8e1-4f7c-bbee-ff8bc270823f",
+    "name" : "Gesundheit",
+    "color" : {
+      "red" : 0.9559999704360962,
+      "green" : 0.9559999704360962,
+      "blue" : 0.9559999704360962,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.30000001192092896,
+      "blue" : 0.30000001192092896,
+      "opacity" : 1.0
+    },
+    "limit" : 250.0
+  }
+}, {
+  "id" : "3326c7e2-8f3f-49a7-8f21-2d773345a8c2",
+  "date" : [ 2024, 8, 20 ],
+  "time" : [ 19, 20 ],
+  "location" : "Restaurant Seaside",
+  "amount" : 180.0,
+  "description" : "Abendessen mit Freunden",
+  "imagePath" : "data/images/abendessen.jpg",
+  "category" : {
+    "id" : "a8a0b3a2-0164-4c53-a3f9-9639b0e6d0b7",
+    "name" : "Restaurants",
+    "color" : {
+      "red" : 0.6000000238418579,
+      "green" : 0.800000011920929,
+      "blue" : 0.800000011920929,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.1998000144958496,
+      "green" : 0.266400009393692,
+      "blue" : 0.266400009393692,
+      "opacity" : 1.0
+    },
+    "limit" : 180.0
+  }
+}, {
+  "id" : "d96f4421-31e4-492c-940b-0ce209cfbf86",
+  "date" : [ 2025, 1, 9 ],
+  "time" : [ 8, 15 ],
+  "location" : "Saturn",
+  "amount" : 220.0,
+  "description" : "Neuer Router",
+  "imagePath" : "data/images/router.jpg",
+  "category" : {
+    "id" : "5cf85902-e755-41b8-9be8-df3ad533c554",
+    "name" : "Wohnung",
+    "color" : {
+      "red" : 0.7009999752044678,
+      "green" : 0.8669999837875366,
+      "blue" : 1.0,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.10000000149011612,
+      "green" : 0.20000000298023224,
+      "blue" : 0.30000001192092896,
+      "opacity" : 1.0
+    },
+    "limit" : 800.0
+  }
+}, {
+  "id" : "23d6223e-6a23-4646-a648-1df03b5f0b36",
+  "date" : [ 2023, 9, 4 ],
+  "time" : null,
+  "location" : "CineStar",
+  "amount" : 40.0,
+  "description" : "Kinoabend",
+  "imagePath" : "data/images/kino.jpg",
+  "category" : {
+    "id" : "2b1ec5d7-a3f7-4b8b-94b1-d6f9d1cf6124",
+    "name" : "Unterhaltung",
+    "color" : {
+      "red" : 0.800000011920929,
+      "green" : 0.699999988079071,
+      "blue" : 0.8999999761581421,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.266400009393692,
+      "green" : 0.23309999704360962,
+      "blue" : 0.299699991941452,
+      "opacity" : 1.0
+    },
+    "limit" : 160.0
+  }
+}, {
+  "id" : "f4c4eb6b-cd8b-43aa-8a0a-d96c9f93de96",
+  "date" : [ 2024, 3, 23 ],
+  "time" : null,
+  "location" : "Universität",
+  "amount" : 500.0,
+  "description" : "Semestergebühren",
+  "imagePath" : null,
+  "category" : {
+    "id" : "94b8bfa7-8ff7-4236-93b2-b5d2945b8c99",
+    "name" : "Bildung",
+    "color" : {
+      "red" : 0.9330000281333923,
+      "green" : 0.8109999895095825,
+      "blue" : 0.8109999895095825,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.10000000149011612,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 200.0
+  }
+}, {
+  "id" : "d823c009-7684-442c-8c63-4d6b433314f7",
+  "date" : [ 2024, 10, 15 ],
+  "time" : null,
+  "location" : "Radshop",
+  "amount" : 25.0,
+  "description" : "Fahrradreparatur",
+  "imagePath" : "data/images/fahrrad.jpg",
+  "category" : {
+    "id" : "cb0b8a9a-204a-474c-a7d6-e3adccf954ec",
+    "name" : "Transport",
+    "color" : {
+      "red" : 0.7450000047683716,
+      "green" : 0.871999979019165,
+      "blue" : 0.7450000047683716,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.4000000059604645,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 120.0
+  }
+}, {
+  "id" : "fa4e43d8-f07b-41c4-8d18-1e1d3f91c796",
+  "date" : [ 2024, 11, 2 ],
+  "time" : [ 14, 30 ],
+  "location" : "Fitnessstudio",
+  "amount" : 30.0,
+  "description" : "Monatsbeitrag Fitness",
+  "imagePath" : "data/images/fitness.jpeg",
+  "category" : {
+    "id" : "ade3d657-f8e1-4f7c-bbee-ff8bc270823f",
+    "name" : "Gesundheit",
+    "color" : {
+      "red" : 0.9559999704360962,
+      "green" : 0.9559999704360962,
+      "blue" : 0.9559999704360962,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.30000001192092896,
+      "green" : 0.30000001192092896,
+      "blue" : 0.30000001192092896,
+      "opacity" : 1.0
+    },
+    "limit" : 250.0
+  }
+}, {
+  "id" : "77fb1aad-08ec-4d0c-9944-5bfaed1d531b",
+  "date" : [ 2023, 12, 18 ],
+  "time" : null,
+  "location" : "Restaurant El Greco",
+  "amount" : 90.0,
+  "description" : "Geschäftsessen",
+  "imagePath" : "data/images/geschaeftsessen.jpeg",
+  "category" : {
+    "id" : "a8a0b3a2-0164-4c53-a3f9-9639b0e6d0b7",
+    "name" : "Restaurants",
+    "color" : {
+      "red" : 0.6000000238418579,
+      "green" : 0.800000011920929,
+      "blue" : 0.800000011920929,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.1998000144958496,
+      "green" : 0.266400009393692,
+      "blue" : 0.266400009393692,
+      "opacity" : 1.0
+    },
+    "limit" : 180.0
+  }
+}, {
+  "id" : "a7b3c928-7a1d-4a0a-8c4b-c2e2a3a5a0a2",
+  "date" : [ 2023, 6, 10 ],
+  "time" : [ 9, 0 ],
+  "location" : "Lidl",
+  "amount" : 60.0,
+  "description" : "Lebensmitteleinkauf",
+  "imagePath" : "data/images/lebensmittel2.jpg",
+  "category" : {
+    "id" : "1e788f50-6c4c-4385-b601-f0eb62a0a4c6",
+    "name" : "Lebensmittel",
+    "color" : {
+      "red" : 1.0,
+      "green" : 0.878000020980835,
+      "blue" : 0.800000011920929,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.5,
+      "green" : 0.20000000298023224,
+      "blue" : 0.10000000149011612,
+      "opacity" : 1.0
+    },
+    "limit" : 300.0
+  }
+}, {
+  "id" : "20d8ee5d-e1a5-4e76-82f3-fd2bc312b097",
+  "date" : [ 2025, 4, 27 ],
+  "time" : null,
+  "location" : "Steam",
+  "amount" : 120.0,
+  "description" : "Spiele und Software",
+  "imagePath" : "data/images/spiel.jpg",
+  "category" : {
+    "id" : "2b1ec5d7-a3f7-4b8b-94b1-d6f9d1cf6124",
+    "name" : "Unterhaltung",
+    "color" : {
+      "red" : 0.800000011920929,
+      "green" : 0.699999988079071,
+      "blue" : 0.8999999761581421,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.266400009393692,
+      "green" : 0.23309999704360962,
+      "blue" : 0.299699991941452,
+      "opacity" : 1.0
+    },
+    "limit" : 160.0
+  }
+}, {
+  "id" : "9b19c8a4-6d75-4903-bd69-2a8ef8f35e04",
+  "date" : [ 2024, 1, 31 ],
+  "time" : [ 17, 45 ],
+  "location" : "Apple Store",
+  "amount" : 700.0,
+  "description" : "Neues iPhone",
+  "imagePath" : "data/images/iphone.jpeg",
+  "category" : {
+    "id" : "5cf85902-e755-41b8-9be8-df3ad533c554",
+    "name" : "Wohnung",
+    "color" : {
+      "red" : 0.7009999752044678,
+      "green" : 0.8669999837875366,
+      "blue" : 1.0,
+      "opacity" : 1.0
+    },
+    "fontColor" : {
+      "red" : 0.10000000149011612,
+      "green" : 0.20000000298023224,
+      "blue" : 0.30000001192092896,
+      "opacity" : 1.0
+    },
+    "limit" : 800.0
+  }
+} ]
